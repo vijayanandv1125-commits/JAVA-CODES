@@ -1,0 +1,10 @@
+public class CHART1 {
+    public static void main(String[] args) {
+
+        System.out.println(
+            String.join("\n",
+                "CODING IS MY WARM UP, DEBUGGING IS MY CARDIO.\nNAME: VIJAY ANAND V.\nDOB: 17/11/2006.\nPHONE: 9566278940.\nEMAIL: vijayanandv780@gmail.com"
+            )
+        );
+    }
+}
