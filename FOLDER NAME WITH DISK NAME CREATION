@@ -1,0 +1,25 @@
+import java.io.File;
+import java.util.Scanner;
+
+public class foldername {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Disk (C/D/E): ");
+        String disk = sc.nextLine();
+
+        System.out.print("Enter Folder Name: ");
+        String folderName = sc.nextLine();
+
+        File folder = new File(disk + ":\\" + folderName);
+
+        if (folder.mkdir()) {
+            System.out.println("Folder created successfully");
+        } else {
+            System.out.println("Folder already exists or creation failed");
+        }
+
+        sc.close();
+    }
+}
